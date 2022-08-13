@@ -17,7 +17,7 @@ int print_char(va_list types, char buffer[],
 {
 	char c = va_arg(types, int);
 
-	return (handle_write_char(c, buffer, flags, width, preecision, size));
+	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
 /***** PRINT A STRING *****/
 /**
@@ -40,8 +40,8 @@ int print_string(va_list types, char buffer[],
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
-	UNSED(precision);
-	UNSED(size);
+	UNUSED(precision);
+	UNUSED(size);
 	if (str == NULL)
 	{
 		str = "(null)";
